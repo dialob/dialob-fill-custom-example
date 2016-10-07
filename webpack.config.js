@@ -11,17 +11,19 @@ module.exports = {
     path: path.join(__dirname, './dist'),
     filename: '[name].js',
     publicPath: `./`,
+    // exports from src/index.js is published on this global
     library: 'CustomExample',
-    libraryTarget: 'var'
+    libraryTarget: 'umd'
   },
+  externals: {
+    // Use external React and FlexiForm
+    'react': 'React',
+    'react-dom': 'ReactDOM',
+    'flexiform-fill-ui': 'FlexiForm'
+  }
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
-  plugins: [
-    new webpack.ProvidePlugin({
-      'FlexiForm': 'imports?this=>global!exports?global.FlexiForm'
-    })
-  ],
   module: {
     loaders: [
       {
@@ -33,9 +35,4 @@ module.exports = {
       }
     ]
   },
-  externals: {
-    'react': 'React',
-    'react-dom': 'ReactDOM',
-    'flexiform-fill-ui': 'FlexiForm'
-  }
 };

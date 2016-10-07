@@ -7,8 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
-  "author": "Tomi Pakarinen <tomi.pakarinen@resys.io>",
+  "author": "ReSys OÜ",
   "license": "Apache-2.0",
+  "repository": "git@github.com:flexiform/flexiform-fill-custom-example.git",
+  "keywords": [
+    "form",
+    "flexiform"
+  ],
   "dependencies": {
     "react": "^15.3.2"
   },
