@@ -30,7 +30,7 @@ class MyTextField extends Item {
     // Item.isRequired() returns true, if question answer is required
     return (
       <div className={this.getStyles()}>
-        <input ref='inputControl' name={q.get('id')} type={'text'} value={q.get('value')} onChange={this.onChangeText.bind(this)} />
+        <input name={q.get('id')} type={'text'} value={q.get('value')} onChange={this.onChangeText.bind(this)} />
         <Label htmlFor={q.get('id')} required={this.isRequired()}>{q.get('label')}</Label>
         <Errors errors={q.get('errors')} />
       </div>

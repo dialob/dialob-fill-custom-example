@@ -20,7 +20,7 @@ module.exports = {
     'react': 'React',
     'react-dom': 'ReactDOM',
     'flexiform-fill-ui': 'FlexiForm'
-  }
+  },
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
