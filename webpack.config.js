@@ -16,10 +16,10 @@ module.exports = {
     libraryTarget: 'umd'
   },
   externals: {
-    // Use external React and FlexiForm
+    // Use external React and Dialob
     'react': 'React',
     'react-dom': 'ReactDOM',
-    'flexiform-fill-ui': 'FlexiForm'
+    'dialob-fill-ui': 'Dialob'
   },
   resolve: {
     extensions: ['', '.js', '.jsx']

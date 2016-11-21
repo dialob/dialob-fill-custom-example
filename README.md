@@ -1,4 +1,4 @@
-Example of custom flexiform question component
+Example of custom dialob question component
 ==============================================
 
  * `npm run build`

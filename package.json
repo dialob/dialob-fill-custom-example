@@ -1,7 +1,7 @@
 {
-  "name": "flexiform-fill-custom-example",
+  "name": "dialob-fill-custom-example",
   "version": "1.0.0",
-  "description": "Example of custom FlexiForm ui component",
+  "description": "Example of custom Dialob ui component",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,10 +9,10 @@
   },
   "author": "ReSys OÜ",
   "license": "Apache-2.0",
-  "repository": "git@github.com:flexiform/flexiform-fill-custom-example.git",
+  "repository": "git@github.com:dialob/dialob-fill-custom-example.git",
   "keywords": [
     "form",
-    "flexiform"
+    "dialob"
   ],
   "dependencies": {
     "react": "^15.3.2"

@@ -4,15 +4,15 @@
   <title>FlexiForm</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <meta charset="UTF-8"/>
-  <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
-  <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
-  <script type="text/javascript" src="https://unpkg.com/flexiform-fill-ui@latest/dist/javascript/ff.js"></script>
+  <script src="https://unpkg.com/react@15.4.0/dist/react.js"></script>
+  <script src="https://unpkg.com/react-dom@15.4.0/dist/react-dom.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/dialob-fill-ui@latest/dist/javascript/dialob.js"></script>
   <script type="text/javascript" src="file:dist/custom-example.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://unpkg.com/flexiform-fill-ui@latest/dist/css/ff.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/dialob-fill-ui@latest/dist/css/dialob.min.css"/>
   <script>__REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__</script>
 </head>
 <body>
-  <div id="ff-app-content"></div>
+  <div id="dialob-app-content"></div>
 </body>
 <script>
   var options = {
@@ -20,6 +20,6 @@
     // library exports 'CustomExample' global 
     componentCreator: CustomExample.customComponentCreator
   };
-  window.FlexiForm.renderFlexiForm(document.getElementById('ff-app-content'),options);
+  window.Dialob.renderDialob(document.getElementById('dialob-app-content'),options);
 </script>
 </html>
