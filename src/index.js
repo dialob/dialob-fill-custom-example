@@ -1,17 +1,17 @@
-import MyTextField from './MyTextField';
+import Redirector from './Redirector';
 
 
-  /* 
+  /*
    * item is an array of two items
    * item[0]: is item's id
    * item[1]: is item's ImmutableJS Map of item.
-   * 
+   *
    * item[1].toJS() return javascript object of item
-   * 
+   *
    * {
    *  className: [],
    *  id: "",
-   *  valueSetId: "", 
+   *  valueSetId: "",
    *  items: [],
    *  label: "",
    *  readOnly: true/false,
@@ -19,7 +19,7 @@ import MyTextField from './MyTextField';
    *  // Current answer
    *  value: ""
    * }
-   * 
+   *
    * Possible types are:
    * - 'text'
    *   if 'valueSetId' is defined -> select
@@ -39,7 +39,7 @@ import MyTextField from './MyTextField';
    * - 'rowgroup'
    * - 'array'
    *   - 'autocomplete'
-   * 
+   *
    */
 function customComponentCreator(item, delegate) {
   if (!item) {
@@ -47,8 +47,8 @@ function customComponentCreator(item, delegate) {
   }
   let id = item[0];
   var jsItem = item[1].toJS();
-  if (jsItem.type === 'text' && jsItem.className && jsItem.className.includes('my-text-field')) {
-    return <MyTextField key={id} question={item}/>;
+  if (jsItem.type === 'note' && jsItem.className && jsItem.className.includes('redirect')) {
+    return <Redirector key={id} question={item}/>;
   }
   return delegate(item);
 }
