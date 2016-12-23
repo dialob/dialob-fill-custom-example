@@ -1,5 +1,5 @@
 import React from 'react';
-import {connectToAnswer, Item, Label, Errors} from 'flexiform-fill-ui';
+import {connectToAnswer, Item, Label, Errors} from 'dialob-fill-ui';
 
 class MyTextField extends Item {
 
@@ -20,13 +20,13 @@ class MyTextField extends Item {
   }
 
   render() {
-    // Item.question provides current question data. 
+    // Item.question provides current question data.
     // Note! it's Immutable.JS Map type.
     let q = this.question;
     if (!q) {
       return null;
     }
-    // Item.getStyles processes basic item classes and some special classes 
+    // Item.getStyles processes basic item classes and some special classes
     // Item.isRequired() returns true, if question answer is required
     return (
       <div className={this.getStyles()}>
